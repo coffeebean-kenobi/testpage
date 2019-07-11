@@ -1,3 +1,80 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "ja-jp"
+title = "AIZIS | あらゆるITサービスをサポート致します"
+theme = "timer-hugo"
+
+# We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
+
+# Site Menus
+[menu]
+    # Navbar Menus
+    [[menu.nav]]
+        name    = "AIZISについて"
+        url     = "about"
+        weight  = 2
+    [[menu.nav]]
+        name    = "サービス内容"
+        url     = "service"
+        weight  = 3
+    [[menu.nav]]
+        name    = "実績"
+        url     = "gallery"
+        weight  = 4
+    [[menu.nav]]
+        name    = "Blog"
+        url     = "blog"
+        weight  = 5
+    [[menu.nav]]
+        name    = "お問い合わせ"
+        url     = "contact"
+        weight  = 6
+
+# Site Params
+[params]
+    home = "Home"
+    logo = "images/logo.png"
+    dateFormat = "6 January 2006"
+    # Meta data
+    description = "Airspace Hugo theme"
+    author = "Themefisher"
+    # Google Analitycs
+    googleAnalitycsID = "Your ID"
+
+    # Banner Section
+    [params.banner]
+        enable  = true
+        bgImage = "images/slider.jpg"
+        heading = "HI, 私たちはAIZISです。"
+        description = "最近の現況を真心を持ってお伝えします。ちなみに今日は雨です。"
+        btn     = false
+        btnText = "Download More"
+        btnURL  = "https://themefisher.com/"
+        [[params.banner.flipText]]
+            title   = "ENGINEER"
+        [[params.banner.flipText]]
+            title   = "EXPLORER"
+        [[params.banner.flipText]]
+            title   = "COFFEE LOVER"
+
+    # Homepage About Section
+    [params.about]
+        enable  = true
+        title   = "自己紹介"
+        content = "こんにちは。田坂です。大学では建築を学んでいます。と言っても、一般的なよくある建築学科のイメージとは違うことをやっています。完全に脇道にそれています。主に、地理情報データをスクリーニング、分析し、住宅ストックの変遷を追っています。主に使用しているツールはArc GISとRです。それらはポリゴンデータと件数の多いデータの分析に適しています。研究室以外ではコーヒーとギターを嗜みます。酒は焼酎かウイスキーです。酒で太ったので自転車に乗って痩せようとしています。"
+        image   = "images/about/about.jpg"
+
+    # Call to Action
+    [params.cta]
+        enable  = true
+        title   = "いかがですか?"
+        content = "きっとあなたのビジネスの助けとなる多くのソリューションを私たちはたくさん持っています。小さなことでも構いません。ちょっとした業務改善から、インフラの構築まで、何なりとご相談ください。"
+        btnText = "お問い合わせはこちら"
+        btnURL  = "/contact"
+
+    # Portfolio Section On Homepage
+    [params.portfolio]
+        enable  = true
+        title   = "あなたの業務に役立つブログはこちら"
+        subtitle= "もしかすると、お仕事の話だけではないかもしれません。お酒ばっかり飲んでいるかもしれません。そんな時は、美味しい肴を探しましょう。"
+
+    
